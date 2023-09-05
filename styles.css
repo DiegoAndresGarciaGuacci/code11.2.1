@@ -1,0 +1,22 @@
+*{
+    background-image: url(700x410_28.png);
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        font-size: 20px;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    #registro {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
