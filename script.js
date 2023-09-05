@@ -1,11 +1,13 @@
+//evento escuha para escuchar el submit cuando se mandar el formlario
 document.getElementById("registro").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+    event.preventDefault(); //hace q no se recargue cuando se man da
 
+//defino constantes
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellido").value;
     const fechaNacimiento = document.getElementById("fechaNacimiento").value;
 
-    // json con info
+    // json con info del formu
     let data = {
         nombre: nombre,
         apellido: apellido,
@@ -21,6 +23,7 @@ document.getElementById("registro").addEventListener("submit", function(event) {
         },
     })
 
+//si se manda correctamente responde algo y sino muestra el error
     .then(response => response.json())
     .then(data => {
         console.log('Registro exitoso: :) ', data);
